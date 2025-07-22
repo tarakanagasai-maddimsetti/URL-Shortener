@@ -1,17 +1,21 @@
 package com.urlshortener.server.dto;
 
+import java.time.LocalDateTime;
+
 public class UrlResponse {
-    private String shortUrl;
+    private String shortCode;
+    private LocalDateTime expiryTime;
 
-    public UrlResponse(String shortUrl) {
-        this.shortUrl = shortUrl;
+    public UrlResponse(String shortCode, LocalDateTime expiryTime) {
+        this.shortCode = shortCode;
+        this.expiryTime = expiryTime;
     }
 
-    public String getShortUrl() {
-        return shortUrl;
+    public String getShortCode() {
+        return shortCode;
     }
 
-    public void setShortUrl(String shortUrl) {
-        this.shortUrl = shortUrl;
+    public LocalDateTime getExpiryTime() {
+        return expiryTime;
     }
 }

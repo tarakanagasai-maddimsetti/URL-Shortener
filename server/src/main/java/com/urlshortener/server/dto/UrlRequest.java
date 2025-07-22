@@ -1,13 +1,13 @@
 package com.urlshortener.server.dto;
 
 public class UrlRequest {
-    private String url;
+    private String originalUrl;
 
-    public String getUrl() {
-        return url;
+    public String getOriginalUrl() {
+        return originalUrl;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setOriginalUrl(String originalUrl) {
+        this.originalUrl = originalUrl;
     }
 }
